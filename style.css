@@ -1,0 +1,10 @@
+body {padding-left: 20%; padding-right: 20%;}
+
+p.description {width: 100%;}
+div.images {align-content: center;}
+ul.social-links {list-style-type: none; display: inline; padding: 3ex;}
+li.social-link {display: inline;}
+
+div.vertical {display: flex; flex-direction: column; padding: 5px;}
+div.horizontal {display: flex; flex-direction: row; padding: 5px;}
+.padded {padding: 5px;}

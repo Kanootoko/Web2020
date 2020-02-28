@@ -4,6 +4,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header>
+            <a href="#description">Описание</a>
+            <a href="#specifications">Характеристики</a>
+            <a href="#form">Обратная связь</a>
+
+        </header>
         <h1>Ноутбук Lenovo ThinkPad Edge E590</h1>
         <a href="https://shop.lenovo.ru/noutbuki/model_e590"><img src="buy.jpg" alt="Купить в магазине Lenovo"></a>
         <p class=description>
@@ -14,11 +20,11 @@
             энергонезависимой памяти Intel&#174; Optane&#8482;. А надежные средства защиты обеспечивают безопасность данных.
         </p>
         <div class=images>
-            <img src="laptop1.jpg" alt="ноутбук" width="32.3%">
-            <img src="laptop2.jpg" alt="ноутбук" width="32.3%">
-            <img src="laptop3.png" alt="ноутбук" width="32.3%">
+            <a class=onlyMobile href="laptop1.jpg"><img src="laptop1.jpg" alt="ноутбук с приоткрытой крышкой" width="32.3%"></a>
+            <a class=onlyMobile href="laptop2.jpg"><img src="laptop2.jpg" alt="ноутбук с открытой на 180 градусов крышкой" width="32.3%"></a>
+            <a class=onlyMobile href="laptop3.jpg"><img src="laptop3.png" alt="ноутбук с открытой крышкой" width="32.3%"></a>
         </div>
-        <div class=horizontal> 
+        <div class=horizontal id=description> 
             <div class=vertical>
                 <h3>Больше никакой уязвимости</h3>
                 <p>
@@ -50,7 +56,7 @@
                 </p>
             </div>
         </div>
-        <h2>Характеристики:</h2>
+        <h2 id=specifications>Характеристики:</h2>
         <ul>
             <li>Процессор: Intel® Core™ i7-8565U восьмого поколения (в максимальной комплектации)</li>
             <li>Операционная система: Windows 10 Pro (в максимальной комплектации)</li>
@@ -66,15 +72,15 @@
         </ul>
 
         <h2>Форма обратной связи:</h2>
-        <form method="POST">
+        <form method="POST" id=form>
             <div class=vertical>
                 <div class=horizontal>
-                    <label class=padded for="form-email">Email:</label>
-                    <input class=padded type="email" id=form-email name=email size=42dp>
+                    <label class="padded hiddenMobile" for="form-email">Email:</label>
+                    <input class=padded type="email" id=form-email name=email size=42dp placeholder="Введите Email">
                 </div>
                 <div class=horizontal>
-                    <label class=padded for="form-text">Текст:</label>
-                    <textarea class=padded id="form-text" rows=8 cols=50 name=text></textarea>
+                    <label class="padded hiddenMobile" for="form-text">Текст:</label>
+                    <textarea class=padded id="form-text" rows=8 cols=50 name=text placeholder="Введите текст"></textarea>
                 </div>
                 <div class=horizontal>
                     <button type="submit">Отправить</button>
@@ -85,16 +91,16 @@
             <span>Lenovo в соцсетях:</span>
             <ul class=social-links>
                 <li class=social-link>
-                    <a href="http://vk.com/lenovoru"><img src="icons/vk.png" alt="Вконтакте" width="50dp" height="50dp"></a>
+                    <a href="http://vk.com/lenovoru"><img src="icons/vk.png" alt="Вконтакте" class=social width="50dp" height="50dp"></a>
                 </li>
                 <li class=social-link>
-                    <a href="https://www.facebook.com/LenovoRussia"><img src="icons/facebook.png" alt="Facebook" width="50dp" height="50dp"></a>
+                    <a href="https://www.facebook.com/LenovoRussia"><img src="icons/facebook.png" alt="Facebook" class=social width="50dp" height="50dp"></a>
                 </li>
                 <li class=social-link>
-                    <a href="http://twitter.com/LenovoRU"><img src="icons/twitter.png" alt="Twitter" width="50dp" height="50dp"></a>
+                    <a href="http://twitter.com/LenovoRU"><img src="icons/twitter.png" alt="Twitter" class=social width="50dp" height="50dp"></a>
                 </li>
                 <li class=social-link>
-                    <a href="http://www.youtube.com/lenovovideoRu"><img src="icons/youtube.png" alt="Youtube" width="50dp" height="50dp"></a>
+                    <a href="http://www.youtube.com/lenovovideoRu"><img src="icons/youtube.png" alt="Youtube" class=social width="50dp" height="50dp"></a>
                 </li>
             </ul>
         </footer>

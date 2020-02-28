@@ -1,5 +1,7 @@
 body {padding-left: 20%; padding-right: 20%;}
 
+header {background-color: rgba(20, 20, 180, 0.4);}
+
 p.description {width: 100%;}
 div.images {align-content: center;}
 ul.social-links {list-style-type: none; display: inline; padding: 3ex;}
@@ -7,4 +9,23 @@ li.social-link {display: inline;}
 
 div.vertical {display: flex; flex-direction: column; padding: 5px;}
 div.horizontal {display: flex; flex-direction: row; padding: 5px;}
+
 .padded {padding: 5px;}
+::placeholder {color: transparent}
+
+@media screen and (min-width: 800px) {
+    a.onlyMobile {
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {padding-left: 0px; padding-right: 0px;}
+    div.horizontal {flex-direction: column;}
+    label.hiddenMobile {display: none;}
+    ::placeholder {color: #999}
+    img.social {width: 30px; height: 30px;}
+}

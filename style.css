@@ -1,31 +1,78 @@
-body {padding-left: 20%; padding-right: 20%;}
+div.content {
+    padding-left: 20%;
+    padding-right: 20%;
+}
 
-header {background-color: rgba(20, 20, 180, 0.4);}
+header {
+    background-color: rgba(20, 20, 180, 0.4);
+    padding-left: 20%;
+}
 
-p.description {width: 100%;}
-div.images {align-content: center;}
-ul.social-links {list-style-type: none; display: inline; padding: 3ex;}
-li.social-link {display: inline;}
+p.description {
+    width: 100%;
+}
+div.images {
+    align-content: center;
+}
+ul.hiddenlist {
+    list-style-type: none;
+    display: inline; 
+    padding: 3ex;
+}
 
-div.vertical {display: flex; flex-direction: column; padding: 5px;}
-div.horizontal {display: flex; flex-direction: row; padding: 5px;}
+li.hiddenentry {
+    padding: 5px;
+}
 
-.padded {padding: 5px;}
-::placeholder {color: transparent}
+div.vertical {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+div.horizontal {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
 
-@media screen and (min-width: 800px) {
+.padded {
+    padding: 5px;
+}
+
+.fitscreen {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 500px) {
     a.onlyMobile {
         pointer-events: none;
         cursor: default;
         text-decoration: none;
         color: black;
     }
+    li.hiddenentry {
+        display: inline;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    body {padding-left: 0px; padding-right: 0px;}
-    div.horizontal {flex-direction: column;}
-    label.hiddenMobile {display: none;}
-    ::placeholder {color: #999}
-    img.social {width: 30px; height: 30px;}
+    div.content {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    div.horizontal {
+        flex-direction: column;
+    }
+    label.hiddenMobile {
+        display: none;
+    }
+    ::placeholder {
+        color: #999
+    }
+    img.social {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    header {padding-left: 0px}
 }
